@@ -77,7 +77,13 @@
 
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
-# TODO!
+# TODO! - completed
+Studio.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Role.destroy_all
+Agent.destroy_all
+
 
 # Generate models and tables, according to the domain model.
 # TODO!

@@ -89,11 +89,16 @@
 # TODO! - in progess
 
 # typed these prompts into the terminal to generate the Studio, Movie, Actor, Role, Agent models
+
+
+
 # rails generate model Studio
 # rails generate model Movie
 # rails generate model Actor
 # rails generate model Role
 # rails generate model Agent
+
+# migrated each model with rails db: migrate prompt in terminal
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.

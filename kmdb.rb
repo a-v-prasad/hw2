@@ -325,18 +325,18 @@ christian_bale.save
 
 
 #Checks for data inserted into tables
-puts "Studios: #{Studio.all.count}"
-puts "Movies: #{Movie.all.count}"
-puts "Actors: #{Actor.all.count}"
-puts "Roles: #{Role.all.count}"
-puts "Agents: #{Agent.all.count}"
-puts ""
+# puts "Studios: #{Studio.all.count}"
+# puts "Movies: #{Movie.all.count}"
+# puts "Actors: #{Actor.all.count}"
+# puts "Roles: #{Role.all.count}"
+# puts "Agents: #{Agent.all.count}"
+# puts ""
 
-ari = Agent.find_by({"name" => "Ari Emanuel"})
-bale = Actor.find_by({"name" => "Christian Bale"})
-puts "Christian Bale agent_id: #{bale["agent_id"]}"
-puts "Ari Emanuel id: #{ari["id"]}"
-puts ""
+# ari = Agent.find_by({"name" => "Ari Emanuel"})
+# bale = Actor.find_by({"name" => "Christian Bale"})
+# puts "Christian Bale agent_id: #{bale["agent_id"]}"
+# puts "Ari Emanuel id: #{ari["id"]}"
+# puts ""
 
 
 

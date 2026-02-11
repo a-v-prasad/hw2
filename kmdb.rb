@@ -79,11 +79,12 @@
 # Use `Model.destroy_all` code.
 # TODO! - completed
 
-# Studio.destroy_all
-# Movie.destroy_all
-# Actor.destroy_all
-# Role.destroy_all
-# Agent.destroy_all
+Role.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Studio.destroy_all
+Agent.destroy_all
+
 
 
 # Generate models and tables, according to the domain model.
@@ -99,7 +100,7 @@
 # rails generate model Role
 # rails generate model Agent
 
-# migrated each model with rails db: migrate prompt in terminal
+# migrated each model with rails db:migrate prompt in terminal
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
@@ -321,6 +322,21 @@ christian_bale = Actor.find_by({"name" => "Christian Bale"})
 christian_bale["agent_id"] = ari["id"]
 christian_bale.save
 
+
+
+#Checks for data inserted into tables
+puts "Studios: #{Studio.all.count}"
+puts "Movies: #{Movie.all.count}"
+puts "Actors: #{Actor.all.count}"
+puts "Roles: #{Role.all.count}"
+puts "Agents: #{Agent.all.count}"
+puts ""
+
+ari = Agent.find_by({"name" => "Ari Emanuel"})
+bale = Actor.find_by({"name" => "Christian Bale"})
+puts "Christian Bale agent_id: #{bale["agent_id"]}"
+puts "Ari Emanuel id: #{ari["id"]}"
+puts ""
 
 
 
